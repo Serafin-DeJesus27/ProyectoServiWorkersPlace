@@ -1,0 +1,89 @@
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+               <h3 class="text-danger text-center">ServiWorkersPlace</h3>
+                <img src="img/logoo.png" class="img-fluid"
+                     alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <h2 class="text-warning">Por favor ingresa tus datos para iniciar sesion</h2>
+                <form class="needs-validation" novalidate action="index.html" method="post">
+                    
+                    <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Correo</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Por favor ingresa tu correo
+      </div>
+    </div>
+  </div>
+                    <label for="validationCustomUsername" class="form-label">Password</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Por favor ingresa tu password
+      </div>
+    </div>
+
+                    <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+
+
+                            <a href="Reestablecer.html" class="text-body">Recuperar pasword?</a>
+                        </div>
+                    <script>
+                        function alerta() {
+                            alert("Por favor ingresa tus datos");
+                        }
+                    </script>
+                        <input type="submit" onclick="alerta()" value="ingresar" />
+                </div>
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                       
+                        <p class="small fw-bold mt-2 pt-1 mb-0">
+                            No tiene cuenta? <a href="Registro.html"
+                                                class="link-danger">Registrese</a>
+                        </p>
+                    </div>
+  </div>
+
+
+            
+
+                </form>
+        
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+        </script>
+        
+    </div>
+</section>
